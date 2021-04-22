@@ -1,8 +1,8 @@
-name: Docker-Image-Build
-
 on:
   push:
     branches: [master]
+
+name: Docker-Image-Build
 
 jobs:
   main:
