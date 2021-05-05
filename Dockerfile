@@ -8,4 +8,8 @@ RUN apt-get -y --no-install-recommends install mtools g++ gcc make dos2unix pyth
 RUN apt-get -y --no-install-recommends install qtdeclarative5-dev qtbase5-dev
 RUN apt-get -y autoremove
 RUN apt-get clean
-RUN rm -rf /var/lib/apt/lists/*
+RUN rm -rf /var/lib/apt/lists/
+RUN rm -rf /var/cache/apt/archives 
+RUN rm -rf /usr/share/doc/
+RUN rm -rf /usr/share/man/
+RUN rm -rf /usr/share/locale/
